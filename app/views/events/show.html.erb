@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @event.start_date %>
+</p>
+
+<p>
+  <strong>Attendance:</strong>
+  <%= @event.Attendance %>
+</p>
+
+<p>
+  <strong>Stripe customer:</strong>
+  <%= @event.stripe_customer_id %>
+</p>
+
+<%= link_to 'Edit', edit_event_path(@event) %> |
+<%= link_to 'Back', events_path %>
